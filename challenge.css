@@ -1,0 +1,94 @@
+body{
+    background-color: #dbe9d0;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: #A44A3F;
+    padding: 1rem;
+    display: grid;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 6rem;
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 4rem;
+    border-radius: 35rem 35rem 0rem 0rem;
+    padding-top: 17rem;
+}
+
+nav a{
+    color: #F6F4D2;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+}
+
+#hero img{
+    height: auto;
+    width: 900px;
+}
+
+
+#join{}
+
+#mission{}
+
+#package{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    gap: 1rem;
+}
+
+.package-description{
+    background-color: #F6F4D2;
+    border-radius: 10%;
+    padding: 2rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.package-1{
+    background-color: #F6F4D2;
+    height: 40vh;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+.package-2{
+    background-color: #F6F4D2;
+    height: 40vh;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+#faq{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, 1fr));
+    gap: 3rem;
+}
+
+.question{
+    background-color: #F6F4D2;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+.signup{
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+    background-color: #F6F4D2;
+    border-radius: 10%;
+    padding: 2rem;
+}
