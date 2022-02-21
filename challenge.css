@@ -9,12 +9,14 @@ header{
     background-color: #A44A3F;
     padding: 1rem;
     display: grid;
+    width: inherit;
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 6rem;
+    padding: 6rem;
+    width: inherit;
 }
 
 .container{
@@ -33,6 +35,7 @@ nav a{
 #hero{
     display: grid;
     grid-template-columns: repeat(2, minmax(10px, 1fr));
+    width: inherit;
 }
 
 #hero img{
@@ -53,7 +56,7 @@ nav a{
 
 .package-description{
     background-color: #F6F4D2;
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 2rem;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -62,14 +65,14 @@ nav a{
 .package-1{
     background-color: #F6F4D2;
     height: 40vh;
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 2rem;
 }
 
 .package-2{
     background-color: #F6F4D2;
     height: 40vh;
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 2rem;
 }
 
@@ -81,7 +84,7 @@ nav a{
 
 .question{
     background-color: #F6F4D2;
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 2rem;
 }
 
@@ -89,6 +92,21 @@ nav a{
     grid-column: 2 / 4;
     grid-row: 2 / 2;
     background-color: #F6F4D2;
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 2rem;
 }
+
+@media only screen and (max-width: 900px) {
+    main {
+      padding: 0;
+    }
+
+    #hero img{
+        width: 80vw;
+        height: auto;
+    }
+
+    #faq{
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+    }
+  }
